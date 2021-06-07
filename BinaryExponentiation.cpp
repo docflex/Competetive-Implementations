@@ -7,8 +7,8 @@ inline lli BinExpo(lli a, lli n, lli mod)
     lli res = 1;
     while(n)
     {
-        if(n % 2) res = (res * a) % mod, n--;
-        else a = (a * a) % mod, n /= 2;
+        if(n % 2) res = ((res % mod) * (a % mod)) % mod, n--;
+        else a = ((a % mod) * (a % mod)) % mod, n /= 2;
     }
     return res;
 }
