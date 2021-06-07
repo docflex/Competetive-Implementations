@@ -16,6 +16,6 @@ inline lli BinExpo(lli a, lli n, lli mod)
 int main()
 {
     lli a, n, mod;
-    cout << "(a^n) % mod: " << BinExpo(a, n, mod);
+    cout << "(a^n)% mod: " << BinExpo(a, n, mod);
     return 0;
 }
