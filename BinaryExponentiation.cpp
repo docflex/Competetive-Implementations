@@ -7,9 +7,9 @@ lli MOD = 10e9 + 7;
 inline lli fastModExpo(lli a, lli n)
 {
     lli res = 1;
-    while(n != 0)
+    while(n)
     {
-        if(n % 2 != 0) res = ((res % MOD) * (a % MOD)) % MOD, n--;
+        if(n % 2) res = ((res % MOD) * (a % MOD)) % MOD, n--;
         else a = ((a % MOD) * (a % MOD)) % MOD, n /= 2;
     }
     return res;
